@@ -2,6 +2,69 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "LibGit2Sharp/0.25.3": {
+        "type": "package",
+        "dependencies": {
+          "LibGit2Sharp.NativeBinaries": "[1.0.235]"
+        },
+        "compile": {
+          "lib/netstandard2.0/LibGit2Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LibGit2Sharp.dll": {}
+        }
+      },
+      "LibGit2Sharp.NativeBinaries/1.0.235": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/alpine-x64/native/libgit2-8e0b172.so": {
+            "assetType": "native",
+            "rid": "alpine-x64"
+          },
+          "runtimes/debian.9-x64/native/libgit2-8e0b172.so": {
+            "assetType": "native",
+            "rid": "debian.9-x64"
+          },
+          "runtimes/fedora-x64/native/libgit2-8e0b172.so": {
+            "assetType": "native",
+            "rid": "fedora-x64"
+          },
+          "runtimes/linux-x64/native/libgit2-8e0b172.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libgit2-8e0b172.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/rhel-x64/native/libgit2-8e0b172.so": {
+            "assetType": "native",
+            "rid": "rhel-x64"
+          },
+          "runtimes/win-x64/native/git2-8e0b172.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/git2-8e0b172.pdb": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/git2-8e0b172.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/git2-8e0b172.pdb": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -25,10 +88,66 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CodeDyno.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "LibGit2Sharp": "0.25.3"
+        },
+        "compile": {
+          "bin/placeholder/CodeDyno.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeDyno.Common.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "LibGit2Sharp/0.25.3": {
+      "sha512": "woqhbP1NB91D/CXEX6OvX8FUJUB9byHVt2S2IMNcwR2phzVfj5KuWK1Lc5VvOQzADgwiR4C70HgtpENaw8uFhw==",
+      "type": "package",
+      "path": "libgit2sharp/0.25.3",
+      "files": [
+        ".signature.p7s",
+        "App_Readme/CHANGES.md",
+        "App_Readme/LICENSE.md",
+        "App_Readme/README.md",
+        "lib/netstandard2.0/LibGit2Sharp.dll",
+        "lib/netstandard2.0/LibGit2Sharp.pdb",
+        "lib/netstandard2.0/LibGit2Sharp.xml",
+        "libgit2sharp.0.25.3.nupkg.sha512",
+        "libgit2sharp.nuspec"
+      ]
+    },
+    "LibGit2Sharp.NativeBinaries/1.0.235": {
+      "sha512": "j0z+abo8l5+ryRfC0Mu/XTT5GoLPw/PZ9WdkVqk7T4OfnfjHQJpkJ9C7FhwY5btt0nyTzfOo4q8RgvMiXOxAaw==",
+      "type": "package",
+      "path": "libgit2sharp.nativebinaries/1.0.235",
+      "files": [
+        ".signature.p7s",
+        "build/LibGit2Sharp.NativeBinaries.props",
+        "build/net461/LibGit2Sharp.NativeBinaries.props",
+        "buildMultiTargeting/LibGit2Sharp.NativeBinaries.props",
+        "buildMultiTargeting/net461/LibGit2Sharp.NativeBinaries.props",
+        "libgit2/LibGit2Sharp.dll.config",
+        "libgit2/libgit2.license.txt",
+        "libgit2/libgit2_hash.txt",
+        "libgit2sharp.nativebinaries.1.0.235.nupkg.sha512",
+        "libgit2sharp.nativebinaries.nuspec",
+        "runtimes/alpine-x64/native/libgit2-8e0b172.so",
+        "runtimes/debian.9-x64/native/libgit2-8e0b172.so",
+        "runtimes/fedora-x64/native/libgit2-8e0b172.so",
+        "runtimes/linux-x64/native/libgit2-8e0b172.so",
+        "runtimes/osx/native/libgit2-8e0b172.dylib",
+        "runtimes/rhel-x64/native/libgit2-8e0b172.so",
+        "runtimes/win-x64/native/git2-8e0b172.dll",
+        "runtimes/win-x64/native/git2-8e0b172.pdb",
+        "runtimes/win-x86/native/git2-8e0b172.dll",
+        "runtimes/win-x86/native/git2-8e0b172.pdb"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -168,10 +287,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CodeDyno.Common/1.0.0": {
+      "type": "project",
+      "path": "../CodeDyno.Common/CodeDyno.Common.csproj",
+      "msbuildProject": "../CodeDyno.Common/CodeDyno.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "CodeDyno.Common >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -182,11 +307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "projectName": "CodeDyno.Repository",
-      "projectPath": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "packagesPath": "C:\\Users\\pkubi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\obj\\",
+      "outputPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -204,7 +329,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
+              "projectPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
