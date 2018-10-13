@@ -1,5 +1,5 @@
 using LibGit2Sharp;
-using PerformanceProfileViewer.Common;
+using CodeDyno.Common;
 using System;
 
 namespace CodeDyno.Repository
@@ -21,7 +21,7 @@ namespace CodeDyno.Repository
             if (branchName == null)
                 throw new ArgumentNullException(CommonExtensions.GetParameterName<string>(() => branchName));
 
-            using (var repository = new Repository(_repositoryPath))
+            using (var repository = new LibGit2Sharp.Repository(_repositoryPath))
             {
                 var branch = repository.Branches[branchName];
                 if (branch != null)
@@ -48,11 +48,11 @@ namespace CodeDyno.Repository
             //nameconflictexception
             try
             {
-                Repository.Clone("https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git", _repositoryPath, cloneOptions);
+                LibGit2Sharp.Repository.Clone("https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git", _repositoryPath, cloneOptions);
             }
             catch (NameConflictException exception)
             {
-
+                throw exception;
             }
         }
 
@@ -60,7 +60,7 @@ namespace CodeDyno.Repository
         {
             try
             {
-                var repository = new Repository(_repositoryPath);
+                var repository = new LibGit2Sharp.Repository(_repositoryPath);
                 return true;
             }
             catch (RepositoryNotFoundException)

@@ -307,11 +307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "projectName": "CodeDyno.Repository",
-      "projectPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectPath": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "packagesPath": "C:\\Users\\pkubi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\obj\\",
+      "outputPath": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -330,8 +330,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
-              "projectPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
+            "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
+              "projectPath": "C:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
             }
           }
         }

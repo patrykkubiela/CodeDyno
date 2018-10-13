@@ -1,0 +1,12 @@
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.csprojAssemblyReference.cache
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.AssemblyInfoInputs.cache
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.AssemblyInfo.cs
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\CodeDyno.Repository.deps.json
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\CodeDyno.Repository.dll
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\CodeDyno.Repository.pdb
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\CodeDyno.Common.dll
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\CodeDyno.Common.pdb
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.csproj.CopyComplete
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.dll
+C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.pdb
