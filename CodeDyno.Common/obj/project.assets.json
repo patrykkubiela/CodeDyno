@@ -289,11 +289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
+      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
       "projectName": "CodeDyno.Common",
-      "projectPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
+      "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
       "packagesPath": "C:\\Users\\pkubi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pkubi\\Documents\\CodeDyno\\CodeDyno.Common\\obj\\",
+      "outputPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -8,3 +8,4 @@
 *.dll
 *.pdb
 *.cache
+project.razor.json
