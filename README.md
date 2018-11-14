@@ -4,31 +4,31 @@
 
 [CodeDyno]: https://github.com/programistadoswiadczony/CodeDyno
 
-##Prerequisites
+## Prerequisites
 
-    **Windows:** 
-        - .NET Standard 2.0
-        - LibGit2Sharp
+  **Windows:**
+  - .NET Standard 2.0
+  - LibGit2Sharp
 
-##Online resources
+## Online resources
 
-    - [.NET Standard] [dotnetstandard]
-    - [LibGit2Sharp] [LibGit2Sharp]
+  - [.NET Standard][dotnetstandard]
+  - [LibGit2Sharp][LibGit2Sharp]
 
-    [dotnetstandard]: https://github.com/dotnet/standard
-    [LibGit2Sharp]: http://libgit2.github.com/
+  [dotnetstandard]: https://github.com/dotnet/standard
+  [LibGit2Sharp]: http://libgit2.github.com/
 
-##Contributing
-    - For now, You can't contribute into this project.
-    - You can fork and clone it locally
+## Contributing
+  - For now, You can't contribute into this project.
+  - You can fork and clone it locally
 
-##Authors
-    -**Code:** The CodeDyno [contributors]
+## Authors
+  - **Code:** The CodeDyno [contributors]
 
-[contributors]: https://github.com/programistadoswiadczony/CodeDyno/graphs/contributors
+  [contributors]: https://github.com/programistadoswiadczony/CodeDyno/graphs/contributors
 
-##License
+## License
 
 The MIT license (Refer to the [LICENSE.md][license] file)
 
- [license]: https://github.com/programistadoswiadczony/CodeDyno/blob/master/LICENSE
+  [license]: https://github.com/programistadoswiadczony/CodeDyno/blob/master/LICENSE
