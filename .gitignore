@@ -7,3 +7,5 @@
 .#*.scm
 *.dll
 *.pdb
+*.cache
+project.razor.json

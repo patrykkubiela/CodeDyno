@@ -17,10 +17,10 @@
       "LibGit2Sharp.NativeBinaries/1.0.235": {
         "type": "package",
         "build": {
-          "build/LibGit2Sharp.NativeBinaries.props": {}
+          "build/_._": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/LibGit2Sharp.NativeBinaries.props": {}
+          "buildMultiTargeting/_._": {}
         },
         "runtimeTargets": {
           "runtimes/alpine-x64/native/libgit2-8e0b172.so": {
@@ -87,6 +87,19 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "CodeDyno.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "LibGit2Sharp": "0.25.3"
+        },
+        "compile": {
+          "bin/placeholder/CodeDyno.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodeDyno.Common.dll": {}
         }
       }
     }
@@ -274,11 +287,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CodeDyno.Common/1.0.0": {
+      "type": "project",
+      "path": "../CodeDyno.Common/CodeDyno.Common.csproj",
+      "msbuildProject": "../CodeDyno.Common/CodeDyno.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "LibGit2Sharp >= 0.25.3",
+      "CodeDyno.Common >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -289,11 +307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
-      "projectName": "CodeDyno.Common",
-      "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj",
+      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectName": "CodeDyno.Repository",
+      "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "packagesPath": "C:\\Users\\pkubi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\obj\\",
+      "outputPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -311,7 +329,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
+              "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -323,10 +345,6 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "LibGit2Sharp": {
-            "target": "Package",
-            "version": "[0.25.3, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
