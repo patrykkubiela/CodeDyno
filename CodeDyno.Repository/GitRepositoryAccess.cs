@@ -1,6 +1,7 @@
 using LibGit2Sharp;
 using CodeDyno.Common;
 using System;
+using System.Linq;
 
 namespace CodeDyno.Repository
 {
@@ -26,7 +27,7 @@ namespace CodeDyno.Repository
                 var branch = repository.Branches[branchName];
                 if (branch != null)
                 {
-                    branch = Commands.Checkout(repository, branch);
+                    branch = Commands.Checkout(repository, branchName);
                 }
 
                 return branch;
@@ -48,7 +49,9 @@ namespace CodeDyno.Repository
             //nameconflictexception
             try
             {
-                LibGit2Sharp.Repository.Clone("https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git", _repositoryPath, cloneOptions);
+                LibGit2Sharp.Repository.Clone(
+                    "https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git", _repositoryPath,
+                    cloneOptions);
             }
             catch (NameConflictException exception)
             {
