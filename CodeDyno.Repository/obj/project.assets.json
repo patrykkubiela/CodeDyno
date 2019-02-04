@@ -106,10 +106,11 @@
   },
   "libraries": {
     "LibGit2Sharp/0.25.3": {
-      "sha512": "woqhbP1NB91D/CXEX6OvX8FUJUB9byHVt2S2IMNcwR2phzVfj5KuWK1Lc5VvOQzADgwiR4C70HgtpENaw8uFhw==",
+      "sha512": "u9NP/iNQ+4DFtLpyZCNB+akroktMzvb4nWE7opW/PR+d6uZe4qjcE5zZMFmOshMU9m7Nq5fMovi3NADTYFSt7Q==",
       "type": "package",
       "path": "libgit2sharp/0.25.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "App_Readme/CHANGES.md",
         "App_Readme/LICENSE.md",
@@ -122,10 +123,11 @@
       ]
     },
     "LibGit2Sharp.NativeBinaries/1.0.235": {
-      "sha512": "j0z+abo8l5+ryRfC0Mu/XTT5GoLPw/PZ9WdkVqk7T4OfnfjHQJpkJ9C7FhwY5btt0nyTzfOo4q8RgvMiXOxAaw==",
+      "sha512": "RQZgKgCOUyYdfgynclSj0rgukkx22T+aIVO/RCNNJhxUONLBS1ayE/isf3dKeMAIaYqDHPXloyZzM6PccS0THw==",
       "type": "package",
       "path": "libgit2sharp.nativebinaries/1.0.235",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/LibGit2Sharp.NativeBinaries.props",
         "build/net461/LibGit2Sharp.NativeBinaries.props",
@@ -149,10 +151,12 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -162,10 +166,12 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -307,11 +313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "projectName": "CodeDyno.Repository",
-      "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
+      "projectPath": "C:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\CodeDyno.Repository.csproj",
       "packagesPath": "C:\\Users\\pkubi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\obj\\",
+      "outputPath": "C:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -330,8 +336,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
-              "projectPath": "c:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
+            "C:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj": {
+              "projectPath": "C:\\Users\\pkubi\\Documents\\Development\\CodeDyno\\CodeDyno.Common\\CodeDyno.Common.csproj"
             }
           }
         }
