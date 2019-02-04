@@ -25,10 +25,6 @@ bld/
 [Oo]bj/
 [Ll]og/
 
-# Nuget and assembly files
-*.props
-*.targets
-*.cache
 
 # Visual Studio 2015/2017 cache/options directory
 .idea/
@@ -195,6 +191,8 @@ PublishScripts/
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
+*.nuget.g.props
+*.nuget.g.targets
 
 # Microsoft Azure Build Output
 csx/
