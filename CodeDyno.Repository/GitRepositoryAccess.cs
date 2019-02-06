@@ -2,6 +2,7 @@ using LibGit2Sharp;
 using CodeDyno.Common;
 using System;
 using CodeDyno.Repository.Interfaces;
+using System.Linq;
 
 namespace CodeDyno.Repository
 {
@@ -9,7 +10,7 @@ namespace CodeDyno.Repository
     {
         private readonly string _localRepositoryPath;
         private readonly CloneOptions _cloneOptions;
-        
+
         public Branch CheckoutedBranch { get; private set; }
 
         public GitRepositoryAccess(Uri localRepositoryPath, CloneOptions cloneOptions = null)
@@ -24,7 +25,7 @@ namespace CodeDyno.Repository
                     Password = "password"
                 };
             }
-            
+
             if (localRepositoryPath == null)
                 throw new ArgumentNullException(CommonExtensions.GetParameterName<Uri>(() => localRepositoryPath));
 
@@ -38,17 +39,17 @@ namespace CodeDyno.Repository
 
             using (var repository = new LibGit2Sharp.Repository(_localRepositoryPath))
             {
-                var branch = repository.Branches[identifier];
+                var branchName = "origin/" + identifier;
+                var branch = repository.Branches.FirstOrDefault(b => b.FriendlyName == branchName);
                 if (branch != null)
                 {
-                    CheckoutedBranch = Commands.Checkout(repository, identifier);
+                    CheckoutedBranch = Commands.Checkout(repository, branch);
                 }
             }
         }
 
         public void Clone(string repositoryAddress)
         {
-            //"https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git"
             try
             {
                 LibGit2Sharp.Repository.Clone(repositoryAddress, _localRepositoryPath, _cloneOptions);
