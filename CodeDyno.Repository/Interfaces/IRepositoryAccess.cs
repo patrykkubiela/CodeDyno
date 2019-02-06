@@ -1,7 +1,10 @@
 namespace CodeDyno.Repository.Interfaces
 {
-    public class IRepositoryAccess
+    public interface IRepositoryAccess<T>
     {
+        T CheckoutedBranch { get; }
         
+        void Checkout(string identifier);
+        void Clone(string repositoryAddress);
     }
 }

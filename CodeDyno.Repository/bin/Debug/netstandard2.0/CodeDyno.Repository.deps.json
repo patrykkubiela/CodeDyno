@@ -53,28 +53,28 @@
     "LibGit2Sharp/0.25.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-woqhbP1NB91D/CXEX6OvX8FUJUB9byHVt2S2IMNcwR2phzVfj5KuWK1Lc5VvOQzADgwiR4C70HgtpENaw8uFhw==",
+      "sha512": "sha512-u9NP/iNQ+4DFtLpyZCNB+akroktMzvb4nWE7opW/PR+d6uZe4qjcE5zZMFmOshMU9m7Nq5fMovi3NADTYFSt7Q==",
       "path": "libgit2sharp/0.25.3",
       "hashPath": "libgit2sharp.0.25.3.nupkg.sha512"
     },
     "LibGit2Sharp.NativeBinaries/1.0.235": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j0z+abo8l5+ryRfC0Mu/XTT5GoLPw/PZ9WdkVqk7T4OfnfjHQJpkJ9C7FhwY5btt0nyTzfOo4q8RgvMiXOxAaw==",
+      "sha512": "sha512-RQZgKgCOUyYdfgynclSj0rgukkx22T+aIVO/RCNNJhxUONLBS1ayE/isf3dKeMAIaYqDHPXloyZzM6PccS0THw==",
       "path": "libgit2sharp.nativebinaries/1.0.235",
       "hashPath": "libgit2sharp.nativebinaries.1.0.235.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "sha512-a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "sha512-548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
