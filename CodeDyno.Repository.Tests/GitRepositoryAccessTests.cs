@@ -1,8 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
-using CodeDyno.Common.Configuration;
-using CodeDyno.Repository.Interfaces;
+using CodeDyno.Common.Interfaces;
 using LibGit2Sharp;
 using Xunit;
 
@@ -11,18 +10,6 @@ namespace CodeDyno.Repository.Tests
     public class GitRepositoryAccessTests
     {
         private IRepositoryAccess<Branch> _gitRepositoryAccess;
-
-        [Fact]
-        public void GitClone_ThrowNameConflictException()
-        {
-            var uri = new Uri(Environment.CurrentDirectory);
-            var repositoryAddress = "";
-            _gitRepositoryAccess = new GitRepositoryAccess(uri);
-
-            Action testCode = () => _gitRepositoryAccess.Clone(repositoryAddress);
-
-            Assert.Throws<NameConflictException>(testCode);
-        }
 
         [Fact]
         public void GitClone_Clone_OK()
@@ -38,6 +25,18 @@ namespace CodeDyno.Repository.Tests
             _gitRepositoryAccess.Clone(repositoryAddress);
 
             Assert.True(Directory.GetFiles(testDirectoryPath).Any());
+        }
+
+        [Fact]
+        public void GitClone_ThrowNameConflictException()
+        {
+            var uri = new Uri(Environment.CurrentDirectory);
+            var repositoryAddress = "";
+            _gitRepositoryAccess = new GitRepositoryAccess(uri);
+
+            Action testCode = () => _gitRepositoryAccess.Clone(repositoryAddress);
+
+            Assert.Throws<NameConflictException>(testCode);
         }
 
         [Fact]

@@ -22,3 +22,4 @@ C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Repository\obj\Debug\nets
 C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.csproj.CopyComplete
 C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.dll
 C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Repository\obj\Debug\netstandard2.0\CodeDyno.Repository.pdb
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Repository\bin\Debug\netstandard2.0\appSettings.json.config

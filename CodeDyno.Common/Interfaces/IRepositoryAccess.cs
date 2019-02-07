@@ -1,4 +1,4 @@
-namespace CodeDyno.Repository.Interfaces
+namespace CodeDyno.Common.Interfaces
 {
     public interface IRepositoryAccess<T>
     {
