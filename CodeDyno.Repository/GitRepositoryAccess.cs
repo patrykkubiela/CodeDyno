@@ -1,71 +1,66 @@
 using LibGit2Sharp;
 using CodeDyno.Common;
 using System;
+using CodeDyno.Repository.Interfaces;
+using System.Linq;
 
 namespace CodeDyno.Repository
 {
-    public class GitRepositoryAccess
+    public class GitRepositoryAccess : IRepositoryAccess<Branch>
     {
-        private readonly string _repositoryPath;
+        private readonly string _localRepositoryPath;
+        private readonly CloneOptions _cloneOptions;
 
-        public GitRepositoryAccess(Uri repositoryPath)
-        {
-            if (repositoryPath == null)
-                throw new ArgumentNullException(CommonExtensions.GetParameterName<Uri>(() => repositoryPath));
+        public Branch CheckoutedBranch { get; private set; }
 
-            _repositoryPath = repositoryPath.AbsolutePath;
-        }
-
-        public Branch Checkout(string branchName)
-        {
-            if (branchName == null)
-                throw new ArgumentNullException(CommonExtensions.GetParameterName<string>(() => branchName));
-
-            using (var repository = new LibGit2Sharp.Repository(_repositoryPath))
-            {
-                var branch = repository.Branches[branchName];
-                if (branch != null)
-                {
-                    branch = Commands.Checkout(repository, branch);
-                }
-
-                return branch;
-            }
-        }
-
-        public void Clone(CloneOptions cloneOptions = null)
+        public GitRepositoryAccess(Uri localRepositoryPath, CloneOptions cloneOptions = null)
         {
             if (cloneOptions == null)
             {
-                cloneOptions = new CloneOptions();
-                cloneOptions.CredentialsProvider = (_url, _user, _cred) => new UsernamePasswordCredentials
+                _cloneOptions = new CloneOptions();
+                _cloneOptions.CredentialsProvider = (_url, _user, _cred) => new UsernamePasswordCredentials
                 {
+                    //TODO get this options from default configuration file
                     Username = "user",
                     Password = "password"
                 };
             }
 
-            //nameconflictexception
+            if (localRepositoryPath == null)
+                throw new ArgumentNullException(CommonExtensions.GetParameterName<Uri>(() => localRepositoryPath));
+
+            _localRepositoryPath = localRepositoryPath.AbsolutePath;
+        }
+
+        public void Checkout(string identifier)
+        {
+            if (identifier == null)
+                throw new ArgumentNullException(CommonExtensions.GetParameterName<string>(() => identifier));
+
+            using (var repository = new LibGit2Sharp.Repository(_localRepositoryPath))
+            {
+                var branchName = "origin/" + identifier;
+                var branch = repository.Branches.FirstOrDefault(b => b.FriendlyName == branchName);
+                if (branch != null)
+                {
+                    CheckoutedBranch = Commands.Checkout(repository, branch);
+                }
+            }
+        }
+
+        public void Clone(string repositoryAddress)
+        {
             try
             {
-                LibGit2Sharp.Repository.Clone("https://github.com/programistadoswiadczony/VSPerformanceProfilerTest.git", _repositoryPath, cloneOptions);
+                LibGit2Sharp.Repository.Clone(repositoryAddress, _localRepositoryPath, _cloneOptions);
             }
             catch (NameConflictException exception)
             {
                 throw exception;
             }
-        }
-
-        public bool IsRepository()
-        {
-            try
+            catch (Exception e)
             {
-                var repository = new LibGit2Sharp.Repository(_repositoryPath);
-                return true;
-            }
-            catch (RepositoryNotFoundException)
-            {
-                return false;
+                throw e;
             }
         }
     }

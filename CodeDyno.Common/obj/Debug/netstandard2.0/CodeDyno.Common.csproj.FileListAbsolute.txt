@@ -7,3 +7,12 @@ C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeD
 C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.AssemblyInfo.cs
 C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.dll
 C:\Users\pkubi\Documents\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.pdb
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\bin\Debug\netstandard2.0\CodeDyno.Common.deps.json
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\bin\Debug\netstandard2.0\CodeDyno.Common.dll
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\bin\Debug\netstandard2.0\CodeDyno.Common.pdb
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.csprojAssemblyReference.cache
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.csproj.CoreCompileInputs.cache
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.AssemblyInfoInputs.cache
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.AssemblyInfo.cs
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.dll
+C:\Users\pkubi\Documents\Development\CodeDyno\CodeDyno.Common\obj\Debug\netstandard2.0\CodeDyno.Common.pdb
