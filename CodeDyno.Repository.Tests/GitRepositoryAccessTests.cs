@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using CodeDyno.Common.Configuration;
 using CodeDyno.Repository.Interfaces;
 using LibGit2Sharp;
 using Xunit;
