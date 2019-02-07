@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.Common", "CodeDyno.Common\CodeDyno.Common.csproj", "{A81907AC-3F40-496A-B178-BE96B86DCE9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.Repository", "CodeDyno.Repository\CodeDyno.Repository.csproj", "{E76B2FDF-393C-404D-ADB6-C733AE0D30C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.GitRepository", "CodeDyno.GitRepository\CodeDyno.GitRepository.csproj", "{E76B2FDF-393C-404D-ADB6-C733AE0D30C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.Repository.Tests", "CodeDyno.Repository.Tests\CodeDyno.Repository.Tests.csproj", "{0AF6F935-6861-485A-BDCE-FBFAFD5E0771}"
 EndProject
