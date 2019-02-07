@@ -13,7 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CodeDyno.Repository\CodeDyno.Repository.csproj" />
+    <ProjectReference Include="..\CodeDyno.Common\CodeDyno.Common.csproj" />
+    <ProjectReference Include="..\CodeDyno.GitRepository\CodeDyno.GitRepository.csproj" />
   </ItemGroup>
 
 </Project>

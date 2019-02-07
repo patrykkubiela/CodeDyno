@@ -1,8 +1,8 @@
 using LibGit2Sharp;
 using CodeDyno.Common;
 using System;
-using CodeDyno.Repository.Interfaces;
 using System.Linq;
+using CodeDyno.Common.Interfaces;
 
 namespace CodeDyno.Repository
 {
