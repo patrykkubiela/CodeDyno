@@ -37,6 +37,8 @@ namespace CodeDyno.Repository.Tests
             Action testCode = () => _gitRepositoryAccess.Clone(repositoryAddress);
 
             //comment
+            //comment2
+            //comment3
             Assert.Throws<NameConflictException>(testCode);
         }
 
