@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.Common", "CodeDyno
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.GitRepository", "CodeDyno.GitRepository\CodeDyno.GitRepository.csproj", "{E76B2FDF-393C-404D-ADB6-C733AE0D30C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.Repository.Tests", "CodeDyno.Repository.Tests\CodeDyno.Repository.Tests.csproj", "{0AF6F935-6861-485A-BDCE-FBFAFD5E0771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.GitRepository.Tests", "CodeDyno.GitRepository.Tests\CodeDyno.GitRepository.Tests.csproj", "{0AF6F935-6861-485A-BDCE-FBFAFD5E0771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
