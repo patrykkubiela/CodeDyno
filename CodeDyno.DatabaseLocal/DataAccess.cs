@@ -46,5 +46,21 @@ namespace CodeDyno.DatabaseLocal
                 throw e;
             }
         }
+
+        public IEnumerable<T> GetEntities<T>() where T : IEntity
+        {
+            try
+            {
+                using (var db = new LiteDatabase(_localDatabaseConnectionString))
+                {
+                    var dbCollection = db.GetCollection<T>();
+                    return dbCollection.FindAll();
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }
