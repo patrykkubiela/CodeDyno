@@ -336,5 +336,4 @@ ASALocalRun/
 
 # Other folders
 ./DatabaseTest
-DatabaseTest
-DatabaseTest/**
+DatabaseTest/
