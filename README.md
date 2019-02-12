@@ -1,6 +1,6 @@
 # The CodeDyno
 
-**CodeDyno gives You informations about Your project performance. It's not testing Your code it's just reading Visual Studio Performance results. CodeDyno can show You those results in preety way, with grids and charts. It's only need to connect into Your repository, and collect data from choosen branch.**
+**CodeDyno gives you informations about your project performance. It's not testing your code it's just reading Visual Studio Performance results. CodeDyno can show you those results in preety way, with grids and charts. It's only need to connect into your repository, and collect data from choosen branch. In further I'm planning to create SaaS model, with users and sindgle infrastructure for all.**
 
 [CodeDyno]: https://github.com/programistadoswiadczony/CodeDyno
 
@@ -9,14 +9,17 @@
   **Windows:**
   - .NET Standard 2.0
   - LibGit2Sharp
+  - LiteDB
 
-## Online resources
+## Online resources/packages
 
   - [.NET Standard][dotnetstandard]
   - [LibGit2Sharp][LibGit2Sharp]
+  - [LiteDB][LiteDB]
 
   [dotnetstandard]: https://github.com/dotnet/standard
   [LibGit2Sharp]: http://libgit2.github.com/
+  [LiteDB]: http://www.litedb.org/
 
 ## Contributing
   - For now, You can't contribute into this project.
