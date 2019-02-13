@@ -8,7 +8,7 @@ namespace CodeDyno.TestingWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class DalController : ControllerBase
     {
         // GET api/values
         [HttpGet]
