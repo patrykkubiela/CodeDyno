@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CodeDyno.DatabaseLocal;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeDyno.TestingWebApi.Controllers
@@ -10,35 +11,21 @@ namespace CodeDyno.TestingWebApi.Controllers
     [ApiController]
     public class DalController : ControllerBase
     {
-        // GET api/values
+        private readonly IDataAccess _dataAccess;
+
+        public DalController(IDataAccess dataAccess)
+        {
+            _dataAccess = dataAccess;
+        }
+        
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] {"value1", "value2"};
+            throw new NotImplementedException();
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
         {
         }
     }
