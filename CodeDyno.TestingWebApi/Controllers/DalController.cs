@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CodeDyno.DatabaseLocal;
+using CodeDyno.TestingWebApi.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeDyno.TestingWebApi.Controllers
@@ -17,16 +18,33 @@ namespace CodeDyno.TestingWebApi.Controllers
         {
             _dataAccess = dataAccess;
         }
-        
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+
+        [HttpGet("allMeasures")]
+        public ActionResult<IEnumerable<Measure>> Get()
         {
-            throw new NotImplementedException();
+            IEnumerable<Measure> measures;
+            try
+            {
+                measures = _dataAccess.GetEntities<Measure>();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+            return Ok(measures);
         }
 
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("/measure")]
+        public void Post([FromBody] Measure measure)
         {
+            _dataAccess.Insert(measure);
+        }
+
+        [HttpPost("/measures")]
+        public void Post([FromBody] IEnumerable<Measure> measures)
+        {
+            _dataAccess.Insert(measures);
         }
     }
 }
