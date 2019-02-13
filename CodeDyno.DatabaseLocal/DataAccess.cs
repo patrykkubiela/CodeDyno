@@ -46,7 +46,7 @@ namespace CodeDyno.DatabaseLocal
                 throw e;
             }
         }
-
+        
         public IEnumerable<T> GetEntities<T>() where T : IEntity
         {
             try
