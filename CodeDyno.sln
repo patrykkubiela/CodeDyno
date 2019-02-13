@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.GitRepository.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.DatabaseLocal", "CodeDyno.DatabaseLocal\CodeDyno.DatabaseLocal.csproj", "{11289A7E-D6B9-49B0-BAEA-149C088CAE49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDyno.TestingWebApi", "CodeDyno.TestingWebApi\CodeDyno.TestingWebApi.csproj", "{FC613627-E57D-4ED7-8F38-9EEF74E5E780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{11289A7E-D6B9-49B0-BAEA-149C088CAE49}.Release|x64.Build.0 = Release|Any CPU
 		{11289A7E-D6B9-49B0-BAEA-149C088CAE49}.Release|x86.ActiveCfg = Release|Any CPU
 		{11289A7E-D6B9-49B0-BAEA-149C088CAE49}.Release|x86.Build.0 = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|x64.Build.0 = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|x64.Build.0 = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC613627-E57D-4ED7-8F38-9EEF74E5E780}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
