@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CodeDyno.DatabaseLocal;
 using CodeDyno.TestingWebApi.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CodeDyno.TestingWebApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class DalController : ControllerBase
+    [Route("api/dal")]
+    public class DalController : Controller
     {
         private readonly IDataAccess _dataAccess;
 
@@ -19,7 +16,8 @@ namespace CodeDyno.TestingWebApi.Controllers
             _dataAccess = dataAccess;
         }
 
-        [HttpGet("allMeasures")]
+        [HttpGet]
+        [Route("allMeasures")]
         public ActionResult<IEnumerable<Measure>> Get()
         {
             IEnumerable<Measure> measures;
@@ -35,13 +33,15 @@ namespace CodeDyno.TestingWebApi.Controllers
             return Ok(measures);
         }
 
-        [HttpPost("/measure")]
+        [HttpPost]
+        [Route("/measure")]
         public void Post([FromBody] Measure measure)
         {
             _dataAccess.Insert(measure);
         }
 
-        [HttpPost("/measures")]
+        [HttpPost]
+        [Route("/measures")]
         public void Post([FromBody] IEnumerable<Measure> measures)
         {
             _dataAccess.Insert(measures);
