@@ -13,7 +13,7 @@ namespace CodeDyno.Common.Configuration
         public AppConfig()
         {
             _configuration = new ConfigurationBuilder()
-                .AddJsonFile("appSettings.json.config", optional: true)
+                .AddJsonFile("appsettings.json", optional: true)
                 .Build();
 
             _repositoryConfig = new RepositoryConfig
