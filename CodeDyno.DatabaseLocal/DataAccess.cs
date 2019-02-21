@@ -8,9 +8,9 @@ namespace CodeDyno.DatabaseLocal
     {
         private readonly string _localDatabaseConnectionString;
 
-        public DataAccess(string localDatabaseConnectionString)
+        public DataAccess()
         {
-            _localDatabaseConnectionString = localDatabaseConnectionString;
+            _localDatabaseConnectionString = "";
         }
 
         public void Insert<T>(T entity) where T : IEntity

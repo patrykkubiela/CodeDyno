@@ -35,13 +35,13 @@ namespace CodeDyno.TestingWebApi.Controllers
             return Ok(measures);
         }
 
-        [HttpPost("/measure")]
+        [HttpPost("api/measure")]
         public void Post([FromBody] Measure measure)
         {
             _dataAccess.Insert(measure);
         }
 
-        [HttpPost("/measures")]
+        [HttpPost("measures")]
         public void Post([FromBody] IEnumerable<Measure> measures)
         {
             _dataAccess.Insert(measures);
