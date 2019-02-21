@@ -7,7 +7,8 @@ namespace CodeDyno.Common.Configuration
     {
         private IConfigurationRoot _configuration;
 
-        private IRepositoryConfig _repositoryConfig;
+        private readonly IRepositoryConfig _repositoryConfig;
+        private readonly IDatabaseConfig _databaseConfig;
 
         public AppConfig()
         {
@@ -20,8 +21,15 @@ namespace CodeDyno.Common.Configuration
                 LocalRepositoryPath = _configuration["RepositoryConfig:LocalRepositoryPath"],
                 RepositoryAddress = _configuration["RepositoryConfig:RepositoryAddress"]
             };
+
+            _databaseConfig = new DatabaseConfig
+            {
+                ConnectionString = _configuration["DatabaseConfig:ConnectionString"]
+            };
         }
 
         public IRepositoryConfig RepositoryConfig => _repositoryConfig;
+
+        public IDatabaseConfig DatabaseConfig => _databaseConfig;
     }
 }
