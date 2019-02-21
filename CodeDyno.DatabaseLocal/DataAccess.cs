@@ -1,16 +1,19 @@
 using System;
 using System.Collections.Generic;
+using CodeDyno.Common.Interfaces;
 using LiteDB;
 
 namespace CodeDyno.DatabaseLocal
 {
     public class DataAccess : IDataAccess
     {
+        private readonly IAppConfig _configuration;
         private readonly string _localDatabaseConnectionString;
 
-        public DataAccess()
+        public DataAccess(IAppConfig configuration)
         {
-            _localDatabaseConnectionString = "";
+            _configuration = configuration;
+            _localDatabaseConnectionString = _configuration.DatabaseConfig.ConnectionString;
         }
 
         public void Insert<T>(T entity) where T : IEntity
