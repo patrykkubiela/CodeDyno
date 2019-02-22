@@ -4,3 +4,38 @@
 # * 'gtrp' and 'gtr' create a GET request with or without query parameters;
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET https://localhost:5001/api/dal/allmeasures
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+###
+
+POST https://localhost:5001/api/dal/measure
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "name": "second",
+  "value": "2"
+}
+
+###
+
+POST https://localhost:5001/api/dal/measures
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+[
+  {
+    "name": "first",
+    "value": "1"
+  },
+  {
+    "name": "second",
+    "value": "2"
+  }
+]
