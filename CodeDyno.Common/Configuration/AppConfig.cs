@@ -1,3 +1,4 @@
+using System;
 using CodeDyno.Common.Interfaces;
 using Microsoft.Extensions.Configuration;
 
@@ -24,7 +25,8 @@ namespace CodeDyno.Common.Configuration
 
             _databaseConfig = new DatabaseConfig
             {
-                ConnectionString = _configuration["DatabaseConfig:ConnectionString"]
+                DefaultConnectionString = _configuration["DatabaseConfig:ConnectionString"],
+                ConnectionString = Environment.CurrentDirectory + $"\\LocalDatabase.db"
             };
         }
 
