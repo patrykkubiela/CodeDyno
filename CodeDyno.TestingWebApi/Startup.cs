@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CodeDyno.Common.Configuration;
+using CodeDyno.Common.Interfaces;
 using CodeDyno.DatabaseLocal;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +29,8 @@ namespace CodeDyno.TestingWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            
+
+            services.AddScoped<IAppConfig, AppConfig>();
             services.AddScoped<IDataAccess, DataAccess>();
         }
 
