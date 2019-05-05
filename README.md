@@ -1,6 +1,6 @@
 # The CodeDyno
 
-**CodeDyno gives You informations about Your project performance. It's not testing Your code it's just reading Visual Studio Performance results. CodeDyno can show You those results in preety way, with grids and charts. It's only need to connect into Your repository, and collect data from choosen branch.**
+**CodeDyno gives you informations about your project performance. It's not testing your code it's just reading Visual Studio Performance tests results. CodeDyno can show you those results in preety way, with grids and charts. It's only need to connect into your repository, and collect data from choosen branch.**
 
 [CodeDyno]: https://github.com/programistadoswiadczony/CodeDyno
 
@@ -19,7 +19,7 @@
   [LibGit2Sharp]: http://libgit2.github.com/
 
 ## Contributing
-  - For now, You can't contribute into this project.
+  - For now, you can't contribute into this project.
   - You can fork and clone it locally
 
 ## Authors
