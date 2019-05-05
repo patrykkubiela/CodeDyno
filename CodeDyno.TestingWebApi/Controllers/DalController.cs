@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using CodeDyno.DatabaseLocal;
 using CodeDyno.TestingWebApi.Entities;
 using Microsoft.AspNetCore.Mvc;
