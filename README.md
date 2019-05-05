@@ -1,6 +1,6 @@
 # The CodeDyno
 
-**CodeDyno gives you informations about your project performance. It's not testing your code it's just reading Visual Studio Performance results. CodeDyno can show you those results in preety way, with grids and charts. It's only need to connect into your repository, and collect data from choosen branch. In further I'm planning to create SaaS model, with users and sindgle infrastructure for all.**
+**CodeDyno gives you informations about your project performance. It's not testing your code it's just reading Visual Studio Performance tests results. CodeDyno can show you those results in preety way, with grids and charts. It's only need to connect into your repository, and collect data from choosen branch.**
 
 [CodeDyno]: https://github.com/programistadoswiadczony/CodeDyno
 
@@ -22,7 +22,7 @@
   [LiteDB]: http://www.litedb.org/
 
 ## Contributing
-  - For now, You can't contribute into this project.
+  - For now, you can't contribute into this project.
   - You can fork and clone it locally
 
 ## Authors
