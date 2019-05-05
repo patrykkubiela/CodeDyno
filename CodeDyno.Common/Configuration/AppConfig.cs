@@ -1,3 +1,4 @@
+using System;
 using CodeDyno.Common.Interfaces;
 using Microsoft.Extensions.Configuration;
 
@@ -7,12 +8,13 @@ namespace CodeDyno.Common.Configuration
     {
         private IConfigurationRoot _configuration;
 
-        private IRepositoryConfig _repositoryConfig;
+        private readonly IRepositoryConfig _repositoryConfig;
+        private readonly IDatabaseConfig _databaseConfig;
 
         public AppConfig()
         {
             _configuration = new ConfigurationBuilder()
-                .AddJsonFile("appSettings.json.config", optional: true)
+                .AddJsonFile("appsettings.json", optional: true)
                 .Build();
 
             _repositoryConfig = new RepositoryConfig
@@ -20,8 +22,16 @@ namespace CodeDyno.Common.Configuration
                 LocalRepositoryPath = _configuration["RepositoryConfig:LocalRepositoryPath"],
                 RepositoryAddress = _configuration["RepositoryConfig:RepositoryAddress"]
             };
+
+            _databaseConfig = new DatabaseConfig
+            {
+                DefaultConnectionString = _configuration["DatabaseConfig:ConnectionString"],
+                ConnectionString = Environment.CurrentDirectory + $"\\LocalDatabase.db"
+            };
         }
 
         public IRepositoryConfig RepositoryConfig => _repositoryConfig;
+
+        public IDatabaseConfig DatabaseConfig => _databaseConfig;
     }
 }
