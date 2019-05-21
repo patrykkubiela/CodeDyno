@@ -9,14 +9,17 @@
   **Windows:**
   - .NET Standard 2.0
   - LibGit2Sharp
+  - LiteDB
 
-## Online resources
+## Online resources/packages
 
   - [.NET Standard][dotnetstandard]
   - [LibGit2Sharp][LibGit2Sharp]
+  - [LiteDB][LiteDB]
 
   [dotnetstandard]: https://github.com/dotnet/standard
   [LibGit2Sharp]: http://libgit2.github.com/
+  [LiteDB]: http://www.litedb.org/
 
 ## Contributing
   - For now, you can't contribute into this project.
