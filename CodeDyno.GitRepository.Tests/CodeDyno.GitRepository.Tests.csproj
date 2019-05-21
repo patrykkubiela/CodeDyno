@@ -19,4 +19,10 @@
     <ProjectReference Include="..\CodeDyno.GitRepository\CodeDyno.GitRepository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\CodeDyno.Common\appsettings.json">
+      <Link>appsettings.json</Link>
+    </Content>
+  </ItemGroup>
+
 </Project>
