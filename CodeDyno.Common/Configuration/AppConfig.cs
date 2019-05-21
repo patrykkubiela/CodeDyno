@@ -20,7 +20,9 @@ namespace CodeDyno.Common.Configuration
             _repositoryConfig = new RepositoryConfig
             {
                 LocalRepositoryPath = _configuration["RepositoryConfig:LocalRepositoryPath"],
-                RepositoryAddress = _configuration["RepositoryConfig:RepositoryAddress"]
+                RepositoryAddress = _configuration["RepositoryConfig:RepositoryAddress"],
+                RepositoryUserName = _configuration["RepositoryConfig:RepositoryUserName"],
+                RepositoryUserPassword = _configuration["RepositoryConfig:RepositoryUserPassword"]
             };
 
             _databaseConfig = new DatabaseConfig
